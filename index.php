@@ -1,7 +1,7 @@
 <?php
 // Check if 'censuro' key exists in $_GET before using it
-$censuro = isset($_GET["censuro"]) ? $_GET["censuro"] : '';
-
+// $censuro = isset($_GET["censuro"]) ? $_GET["censuro"] : '';
+    $censuro = $_GET["censuro"];
 // Replace 'e' with '*' in the censuro variable
 $censored = str_replace("e", "*", $censuro);
 ?>
